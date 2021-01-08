@@ -1,1 +1,1 @@
-# openshift-kustomize
+# openshift-helm
