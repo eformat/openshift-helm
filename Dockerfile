@@ -1,9 +1,9 @@
-FROM registry.access.redhat.com/ubi8/ubi:8.4
-ARG HELM_VERSION=3.7.0
+FROM registry.access.redhat.com/ubi8/ubi:8.5
+ARG HELM_VERSION=3.8.1
 ARG JQ_VERSION=1.6
-ARG YQ_VERSION=4.13.2
-ARG OC_VERSION=4.8.11
-ARG TKN_VERSION=0.19.1
+ARG YQ_VERSION=4.22.1
+ARG OC_VERSION=4.10.3
+ARG TKN_VERSION=0.21.0
 RUN dnf -y install gettext && \
     dnf clean all && \
     curl -L https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz | tar --strip-components=1 -C /usr/local/bin -xzf - linux-amd64/helm && \
